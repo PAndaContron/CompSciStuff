@@ -1,0 +1,16 @@
+
+public class MyDoublyLinkedListNode<Type> extends ListNode<Type>
+{
+	private MyDoublyLinkedListNode<Type> previous;
+	
+	public MyDoublyLinkedListNode(Type initObj, MyDoublyLinkedListNode<Type> initNext) 
+	{
+		super(initObj, initNext);
+		previous = null;
+	}
+	
+	public MyDoublyLinkedListNode<Type> getNext()
+	{
+		
+	}
+}
