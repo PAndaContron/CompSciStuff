@@ -1,0 +1,9 @@
+Rajat Patel
+Period 9/10
+
+list.clear() - clears out all elements.
+list.contains(Object o) - returns a boolean depending on whether or not the object is in the list.
+list.equals(Object o) - returns true if the two lists are the same length and match on every element.
+list.indexOf(Object o) - returns the first index where o is found in the list.
+list.isEmpty() - returns true if there are no elements in the list.
+list.lastIndexOf(Object o) - similar to indexOf but returns the last index rather than the first.

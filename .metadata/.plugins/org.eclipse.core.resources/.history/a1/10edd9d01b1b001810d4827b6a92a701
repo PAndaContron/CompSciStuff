@@ -1,0 +1,12 @@
+
+public class HI_MR_GILL 
+{
+
+	public static void main(String[] args) 
+	{
+		//HI MR GILL
+		while(true)
+			System.out.println("HI MR. GILL");
+	}
+
+}

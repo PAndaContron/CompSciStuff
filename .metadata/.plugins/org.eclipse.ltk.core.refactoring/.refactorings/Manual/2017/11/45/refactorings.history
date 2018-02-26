@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;&apos; to &apos;MyArrayList.print()&apos;&#x0D;&#x0A;- Original project: &apos;Manual&apos;&#x0D;&#x0A;- Destination element: &apos;MyArrayList.print()&apos;&#x0D;&#x0A;- Original element: &apos;MyArrayList.reallocate()&apos;&#x0D;&#x0A;- Textual move only&#x0D;&#x0A;- Update references to refactored element" description="Move method" destination="/src&lt;{MyArrayList.java[MyArrayList~print" element1="/src&lt;{MyArrayList.java[MyArrayList~reallocate" flags="589830" id="org.eclipse.jdt.ui.move" members="1" policy="org.eclipse.jdt.ui.moveMembers" stamp="1510162964350" version="1.0"/>
+</session>

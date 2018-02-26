@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;e&apos; in &apos;MyLinkedList.hashCode()&apos; to &apos;type&apos;&#x0D;&#x0A;- Original project: &apos;Manual&apos;&#x0D;&#x0A;- Original element: &apos;MyLinkedList.hashCode().e&apos;&#x0D;&#x0A;- Renamed element: &apos;e&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;e&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{MyLinkedList.java[MyLinkedList~hashCode@e!5830!5842!5835!5835!QType;!0!false" name="type" references="true" stamp="1516988379462" version="1.0"/>
+</session>

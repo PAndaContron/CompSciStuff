@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;Chap3/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Chap3A&apos;&#x0D;&#x0A;- Destination element: &apos;Chap3/src/(default package)&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Prog3_12b.java&#x0D;&#x0A;     Prog3_6.java&#x0D;&#x0A;     Prog3_12a.java&#x0D;&#x0A;     Prog3_12c.java&#x0D;&#x0A;     Prog3_12d.java" description="Copy compilation units" destination="=Chap3/src&lt;" element1="/src&lt;{Prog3_12b.java" element2="/src&lt;{Prog3_6.java" element3="/src&lt;{Prog3_12a.java" element4="/src&lt;{Prog3_12c.java" element5="/src&lt;{Prog3_12d.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1487951261202" units="5" version="1.0"/>
+</session>
