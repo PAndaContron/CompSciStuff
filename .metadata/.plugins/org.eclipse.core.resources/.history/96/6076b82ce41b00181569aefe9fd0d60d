@@ -1,0 +1,4 @@
+
+public class MyDoublyLinkedList<Type> extends MyLinkedList<Type> {
+
+}

@@ -1,0 +1,19 @@
+//Rajat Patel
+
+public class MyDoublyLinkedList<Type extends Comparable<Type>> extends MyLinkedList<Type> 
+{
+	public DoubleListNode<Type> first;
+	public DoubleListNode<Type> last;
+	
+	public boolean add(Type t)
+	{
+		DoubleListNode<Type> node = new DoubleListNode<Type>(t, null, last);
+		if(size==0)
+			first = node;
+		else
+			last.setNext(node);
+		last = node;
+		size++;
+		return true;
+	}
+}

@@ -1,5 +1,7 @@
 import javax.swing.JOptionPane;
 
+//Rajat Patel
+
 public class Quiz 
 {
 
