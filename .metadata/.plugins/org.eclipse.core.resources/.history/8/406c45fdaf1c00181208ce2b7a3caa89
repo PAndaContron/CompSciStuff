@@ -1,4 +1,3 @@
-//Rajat Patel
 
 public class DoubleListNode<Type> extends ListNode<Type>
 {

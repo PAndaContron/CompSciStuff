@@ -7,9 +7,7 @@ public class Quiz
 
 	public static void main(String[] args) 
 	{
-		final int NUM = 10;
-		
-		String[] answers = new String[NUM];
+		String[] answers = new String[10];
 		String[] answerKey = {"Ottawa", "Albania", "Kazakhstan", "Egypt", "Denmark", "193", "Croatia", "Romania", "Colombia", "Russia"};
 		
 		String[] options1 = {"Quebec", "Ottawa", "Montreal", "Colombia"};	//Ottawa
@@ -52,10 +50,10 @@ public class Quiz
 		answers[9] = (String) JOptionPane.showInputDialog(null, "Which country does Poland border? ", "Question 10",
 				JOptionPane.QUESTION_MESSAGE, null, options10, "Bulgaria");
 		
-		boolean[] correct = new boolean[NUM];
+		boolean[] correct = new boolean[10];
 		int numCorrect = 0;
-		for(int i = 0; i<NUM; i++)
-			if(answers[i] != null && answers[i].equals(answerKey[NUM]))
+		for(int i = 0; i<10; i++)
+			if(answers[i] != null && answers[i].equals(answerKey[i]))
 			{
 				correct[i] = true;
 				numCorrect++;
@@ -63,7 +61,7 @@ public class Quiz
 		
 		String message = "You got "+numCorrect+"/10 questions correct.";
 		
-		for(int i = 0; i<NUM; i++)
+		for(int i = 0; i<10; i++)
 		{
 			message += "\n\nQuestion "+(i+1)+": You put "+(answers[i]==null ? "nothing" : answers[i])+", "
 					+ (correct[i] ? "which is correct." : ("the correct answer was "+answerKey[i]+"."));

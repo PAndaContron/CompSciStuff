@@ -1,7 +1,5 @@
 import javax.swing.JOptionPane;
 
-//Rajat Patel
-
 public class EvenOrOdd 
 {
 
@@ -21,10 +19,10 @@ public class EvenOrOdd
 				if(input == null)
 					break;
 				if(input.substring(0, 5).equals("(int)"))
-					JOptionPane.showMessageDialog(null, "Casting doesn't work here.",
+					JOptionPane.showMessageDialog(null, input+" is not an integer.",
 							"Error", JOptionPane.ERROR_MESSAGE);
 				else
-					JOptionPane.showMessageDialog(null, input+" is not an integer.",
+					JOptionPane.showMessageDialog(null, "Casting doesn't work here.",
 							"Error", JOptionPane.ERROR_MESSAGE);
 				continue;
 			}
