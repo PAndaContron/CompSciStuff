@@ -1,0 +1,13 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Deli 
+{
+	private JFrame frame;
+	private JPanel panel;
+	private final int WIDTH = 300, HEIGHT = 100;
+	private JTextField title, middle, result;
+	
+	
+}

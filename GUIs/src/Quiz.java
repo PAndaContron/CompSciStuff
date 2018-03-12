@@ -55,7 +55,7 @@ public class Quiz
 		boolean[] correct = new boolean[NUM];
 		int numCorrect = 0;
 		for(int i = 0; i<NUM; i++)
-			if(answers[i] != null && answers[i].equals(answerKey[NUM]))
+			if(answers[i] != null && answers[i].equals(answerKey[i]))
 			{
 				correct[i] = true;
 				numCorrect++;
