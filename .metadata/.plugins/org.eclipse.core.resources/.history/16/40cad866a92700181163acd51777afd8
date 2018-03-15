@@ -1,5 +1,4 @@
 import java.awt.Color;
-import java.awt.Dimension;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -13,7 +12,7 @@ import javax.swing.JTextField;
 public class Deli 
 {
 	private JFrame frame;
-	private JPanel panel, panel2;
+	private JPanel panel;
 	private final int WIDTH = 300, HEIGHT = 100;
 	private JTextField name;
 	private JLabel nameLabel, meatLabel, veggieLabel, sauceLabel, listLabel, priceLabel;
@@ -23,13 +22,13 @@ public class Deli
 	
 	public Deli()
 	{
-		frame = new JFrame("The Dry Deli");
+		frame = new JFrame("Deli");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		name = new JTextField(20);
+		
 		
 		nameLabel = new JLabel("Name: ");
-		meatLabel = new JLabel("\nMeat");
+		meatLabel = new JLabel("Meat");
 		veggieLabel = new JLabel("Vegetables");
 		sauceLabel = new JLabel("Sauces");
 		listLabel = new JLabel("");
@@ -56,23 +55,5 @@ public class Deli
 		veggie.add(tomato);
 		veggie.add(onion);
 		veggie.add(lettuce);
-		
-		mayo = new JCheckBox("Mayo - $0.99");
-		mayo.setBackground(Color.cyan);
-		ranch= new JCheckBox("Ranch - $0.99");
-		ranch.setBackground(Color.cyan);
-		hot = new JCheckBox("Spicy - $1.99");
-		hot.setBackground(Color.cyan);
-		
-		panel = new JPanel();
-		panel.setBackground(Color.cyan);
-		panel.setPreferredSize(new Dimension(WIDTH, HEIGHT));
-		panel.add(nameLabel);
-		panel.add(name);
-		
-		frame.getContentPane().add(panel);
-		
-		frame.pack();
-		frame.setVisible(true);
 	}
 }

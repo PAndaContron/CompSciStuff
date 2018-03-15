@@ -70,7 +70,13 @@ public class Deli
 		panel.add(nameLabel);
 		panel.add(name);
 		
+		panel2 = new JPanel();
+		panel2.setBackground(Color.cyan);
+		panel2.setPreferredSize(new Dimension(WIDTH, HEIGHT));
+		panel2.add(meatLabel);
+		
 		frame.getContentPane().add(panel);
+		frame.setSize(WIDTH, HEIGHT);
 		
 		frame.pack();
 		frame.setVisible(true);

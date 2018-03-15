@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 public class Deli 
 {
 	private JFrame frame;
-	private JPanel panel, panel2;
+	private JPanel panel;
 	private final int WIDTH = 300, HEIGHT = 100;
 	private JTextField name;
 	private JLabel nameLabel, meatLabel, veggieLabel, sauceLabel, listLabel, priceLabel;
@@ -29,7 +29,7 @@ public class Deli
 		name = new JTextField(20);
 		
 		nameLabel = new JLabel("Name: ");
-		meatLabel = new JLabel("\nMeat");
+		meatLabel = new JLabel("Meat");
 		veggieLabel = new JLabel("Vegetables");
 		sauceLabel = new JLabel("Sauces");
 		listLabel = new JLabel("");
@@ -69,6 +69,8 @@ public class Deli
 		panel.setPreferredSize(new Dimension(WIDTH, HEIGHT));
 		panel.add(nameLabel);
 		panel.add(name);
+		panel.add(new JLabel("\n"));
+		panel.add(meatLabel);
 		
 		frame.getContentPane().add(panel);
 		
