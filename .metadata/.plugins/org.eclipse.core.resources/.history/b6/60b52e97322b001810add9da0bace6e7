@@ -1,0 +1,156 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class Deli 
+{
+	private JFrame frame;
+	private JPanel panel;
+	private final int WIDTH = 600, HEIGHT = 600;
+	private JTextField name;
+	private JLabel nameLabel, meatLabel, veggieLabel, sauceLabel, priceLabel;
+	private JRadioButton salami, pastrami, bologna, tomato, onion, lettuce;
+	private JCheckBox mayo, ranch, hot;
+	private JButton order, newCustomer;
+	
+	public Deli()
+	{
+		frame = new JFrame("The Dry Deli");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		name = new JTextField(20);
+		
+		nameLabel = new JLabel("Name: ");
+		meatLabel = new JLabel("Meat");
+		veggieLabel = new JLabel("Vegetables");
+		sauceLabel = new JLabel("Sauces");
+		priceLabel = new JLabel("TOTAL: $0.00");
+		
+		salami = new JRadioButton("Salami - $4.98", true);
+		salami.setBackground(Color.cyan);
+		salami.setToolTipText("$4.98");
+		pastrami = new JRadioButton("Pastrami - $5.98");
+		pastrami.setBackground(Color.cyan);
+		pastrami.setToolTipText("$5.98");
+		bologna = new JRadioButton("Bologna - $3.98");
+		bologna.setBackground(Color.cyan);
+		bologna.setToolTipText("$3.98");
+		ButtonGroup meat = new ButtonGroup();
+		meat.add(salami);
+		meat.add(pastrami);
+		meat.add(bologna);
+		
+		tomato = new JRadioButton("Tomato - $3.42", true);
+		tomato.setBackground(Color.cyan);
+		tomato.setToolTipText("$3.42");
+		onion = new JRadioButton("Onion - $4.82");
+		onion.setBackground(Color.cyan);
+		onion.setToolTipText("$4.82");
+		lettuce = new JRadioButton("Lettuce - $2.62");
+		lettuce.setBackground(Color.cyan);
+		lettuce.setToolTipText("$2.62");
+		ButtonGroup veggie = new ButtonGroup();
+		veggie.add(tomato);
+		veggie.add(onion);
+		veggie.add(lettuce);
+		
+		mayo = new JCheckBox("Mayo - $0.99");
+		mayo.setBackground(Color.cyan);
+		mayo.setToolTipText("$0.99");
+		ranch= new JCheckBox("Ranch - $0.99");
+		ranch.setBackground(Color.cyan);
+		ranch.setToolTipText("$0.99");
+		hot = new JCheckBox("Spicy - $1.99");
+		hot.setBackground(Color.cyan);
+		hot.setToolTipText("$1.99");
+		
+		order = new JButton("Order");
+		order.setToolTipText("Finalize your order");
+		newCustomer = new JButton("New Customer");
+		newCustomer.setToolTipText("Start a new order");
+		
+		JPanel namePanel = new JPanel();
+		namePanel.setBackground(Color.cyan);
+		namePanel.add(nameLabel);
+		namePanel.add(name);
+		
+		JPanel meatTitlePanel = new JPanel();
+		meatTitlePanel.setBackground(Color.cyan);
+		meatTitlePanel.add(meatLabel);
+		
+		JPanel meatPanel = new JPanel();
+		meatPanel.setBackground(Color.cyan);
+		meatPanel.add(salami);
+		meatPanel.add(pastrami);
+		meatPanel.add(bologna);
+		
+		JPanel veggieTitlePanel = new JPanel();
+		veggieTitlePanel.setBackground(Color.cyan);
+		veggieTitlePanel.add(veggieLabel);
+		
+		JPanel veggiePanel = new JPanel();
+		veggiePanel.setBackground(Color.cyan);
+		veggiePanel.add(tomato);
+		veggiePanel.add(onion);
+		veggiePanel.add(lettuce);
+		
+		JPanel sauceTitlePanel = new JPanel();
+		sauceTitlePanel.setBackground(Color.cyan);
+		sauceTitlePanel.add(sauceLabel);
+		
+		JPanel saucePanel = new JPanel();
+		saucePanel.setBackground(Color.cyan);
+		saucePanel.add(mayo);
+		saucePanel.add(ranch);
+		saucePanel.add(hot);
+		
+		JPanel buttonPanel = new JPanel();
+		buttonPanel.setBackground(Color.cyan);
+		buttonPanel.add(order);
+		buttonPanel.add(newCustomer);
+		
+		JPanel pricePanel = new JPanel();
+		pricePanel.setBackground(Color.cyan);
+		pricePanel.add(priceLabel);
+
+		GridBagConstraints grid = new GridBagConstraints();
+		grid.gridx = 0;
+		grid.gridy = 0;
+		
+		panel = new JPanel(new GridBagLayout());
+		panel.setBackground(Color.cyan);
+		panel.setPreferredSize(new Dimension(WIDTH, HEIGHT));
+		panel.add(namePanel, grid);
+		grid.gridy++;
+		panel.add(meatTitlePanel, grid);
+		grid.gridy++;
+		panel.add(meatPanel, grid);
+		grid.gridy++;
+		panel.add(veggieTitlePanel, grid);
+		grid.gridy++;
+		panel.add(veggiePanel, grid);
+		grid.gridy++;
+		panel.add(sauceTitlePanel, grid);
+		grid.gridy++;
+		panel.add(saucePanel, grid);
+		grid.gridy++;
+		panel.add(buttonPanel, grid);
+		grid.gridy++;
+		panel.add(pricePanel, grid);
+		
+		frame.getContentPane().add(panel);
+		
+		frame.pack();
+		frame.setVisible(true);
+	}
+}

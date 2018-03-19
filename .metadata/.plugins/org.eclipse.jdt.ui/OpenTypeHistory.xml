@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.lang(System.class[System" modifiers="17" timestamp="1486136519304"/>
-<typeInfo handle="=Chap5/src&lt;{Lockable.java[Lockable" modifiers="513" timestamp="1490972192972"/>
-<typeInfo handle="=Chap5/src&lt;{Priority.java[Priority" modifiers="513" timestamp="1490970557216"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.lang(Integer.class[Integer" modifiers="49" timestamp="1486136519304"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1486136519304"/>
-<typeInfo handle="=Manual/src&lt;{Dog.java[Dog" modifiers="1025" timestamp="1497279236824"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.lang(Iterable.class[Iterable" modifiers="1537" timestamp="1486136519304"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;com.sun.java.util.jar.pack(Package$File.class[File" modifiers="17" timestamp="1486136519304"/>
-<typeInfo handle="=Manual/src&lt;org.djtrump.memes{Communism.java[Communism" modifiers="513" timestamp="1513707202039"/>
-<typeInfo handle="=Manual/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;org.w3c.dom(Comment.class[Comment" modifiers="1537" timestamp="1486136519304"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.util(ArrayList.class[ArrayList" modifiers="33" timestamp="1486136519304"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.util(LinkedList.class[LinkedList" modifiers="33" timestamp="1486136519304"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.util(AbstractSequentialList.class[AbstractSequentialList" modifiers="1057" timestamp="1486136519304"/>
-<typeInfo handle="=Chap1/C:\/Program Files\/Java\/jre1.8.0_91\/lib\/rt.jar&lt;java.util(AbstractList.class[AbstractList" modifiers="1057" timestamp="1486136519304"/>
-<typeInfo handle="=Manual/src&lt;{ListNode.java[ListNode" modifiers="1" timestamp="1515780369608"/>
-<typeInfo handle="=Manual/src&lt;{MyLinkedList.java[MyLinkedList" modifiers="1" timestamp="1519753688223"/>
+<typeInfo handle="=Chap5/src&lt;{Lockable.java[Lockable" modifiers="513" timestamp="1521432755726"/>
+<typeInfo handle="=Chap5/src&lt;{Priority.java[Priority" modifiers="513" timestamp="1521432755727"/>
+<typeInfo handle="=Manual/src&lt;{Dog.java[Dog" modifiers="1025" timestamp="1521432755902"/>
+<typeInfo handle="=Manual/src&lt;org.djtrump.memes{Communism.java[Communism" modifiers="513" timestamp="1521432755945"/>
+<typeInfo handle="=Manual/src&lt;{ListNode.java[ListNode" modifiers="1" timestamp="1521432755915"/>
+<typeInfo handle="=Manual/src&lt;{MyLinkedList.java[MyLinkedList" modifiers="1" timestamp="1521432755921"/>
 </typeInfoHistroy>
