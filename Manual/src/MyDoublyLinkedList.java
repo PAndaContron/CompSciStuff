@@ -36,9 +36,18 @@ public class MyDoublyLinkedList<Type extends Comparable<Type>> extends MyLinkedL
 	public String toString()
 	{
 		String s = "[";
-		for(int i=0;i<size;i++)
-			s += get(i).toString()+",";
+		for(DoubleListNode<Type> current = first; current != null; current = current.getNext())
+			s += current.getValue().toString()+",";
 		s = s.substring(0, s.length()-1)+"]";
 		return s;
+	}
+	
+	public void printBackwards()
+	{
+		String s = "[";
+		for(DoubleListNode<Type> current = last; current != null; current = current.getPrevious())
+			s += current.getValue().toString()+",";
+		s = s.substring(0, s.length()-1)+"]";
+		System.out.println(s);
 	}
 }

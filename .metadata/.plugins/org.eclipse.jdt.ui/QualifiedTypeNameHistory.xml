@@ -10,4 +10,10 @@
 <fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="javax.swing.BoxLayout"/>
+<fullyQualifiedTypeName name="java.awt.Component"/>
+<fullyQualifiedTypeName name="java.math.RoundingMode"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javafx.scene.media.Media"/>
+<fullyQualifiedTypeName name="javafx.scene.media.MediaPlayer"/>
 </qualifiedTypeNameHistroy>

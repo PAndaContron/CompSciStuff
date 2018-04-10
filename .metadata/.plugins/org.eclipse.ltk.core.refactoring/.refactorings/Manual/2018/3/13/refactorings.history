@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;p&apos; in &apos;PiCalc.main(...)&apos; to &apos;l&apos;&#x0D;&#x0A;- Original project: &apos;Manual&apos;&#x0D;&#x0A;- Original element: &apos;PiCalc.main(String[]).p&apos;&#x0D;&#x0A;- Renamed element: &apos;p&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;p&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{PiCalc.java[PiCalc~main~\[QString;@p!986!1002!993!993!QJLabel;!0!false" name="l" references="true" stamp="1522170508259" version="1.0"/>
+</session>

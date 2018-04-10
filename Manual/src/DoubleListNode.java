@@ -35,12 +35,4 @@ public class DoubleListNode<Type> extends ListNode<Type>
 	{
 		previous = node;
 	}
-	
-	private DoubleListNode<Type> clone(boolean direction)
-	{
-		if(direction)
-		{
-			return new DoubleListNode<Type>();
-		}
-	}
 }
