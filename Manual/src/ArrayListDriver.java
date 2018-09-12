@@ -5,7 +5,6 @@
 //  A copy of Java ArrayList
 //***********************************************************************************
 
-import java.util.LinkedList;
 import java.util.Random;
 
 public class ArrayListDriver 
@@ -83,8 +82,5 @@ public class ArrayListDriver
 		//Clear
 		list.clear();
 		System.out.println("List size: " + list.size());
-		
-		LinkedList<String> lList = new LinkedList<String>();
-		lList.
 	}
 }

@@ -1,0 +1,5 @@
+package abstractExcercise;
+
+public abstract class Shape {
+
+}
