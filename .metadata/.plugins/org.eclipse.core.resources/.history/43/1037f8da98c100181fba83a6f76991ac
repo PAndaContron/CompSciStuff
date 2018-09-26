@@ -1,0 +1,6 @@
+package general;
+
+public enum Side 
+{
+	
+}

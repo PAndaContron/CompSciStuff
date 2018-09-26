@@ -1,0 +1,20 @@
+package checkers;
+
+import java.awt.Color;
+
+import general.Piece;
+import general.Side;
+
+public class CheckerPiece extends Piece 
+{
+	public CheckerPiece(Color c, Side s)
+	{
+		super(s, c);
+		
+	}
+	
+	public boolean canMove(Piece[][] board, int[] current, int[] moveTo) 
+	{
+		return false;
+	}
+}

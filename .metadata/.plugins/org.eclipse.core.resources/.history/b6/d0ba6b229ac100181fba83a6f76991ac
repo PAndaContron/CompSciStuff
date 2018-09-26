@@ -8,18 +8,6 @@ public abstract class Piece
 	private Color color;
 	private Side side;
 	
-	public Piece(Side s, Color c)
-	{
-		this(s, c, ' ');
-	}
-	
-	protected Piece(Side s, Color c, char ic)
-	{
-		icon = ic;
-		color = c;
-		side = s;
-	}
-	
 	protected void setIcon(char c)
 	{
 		icon = c;

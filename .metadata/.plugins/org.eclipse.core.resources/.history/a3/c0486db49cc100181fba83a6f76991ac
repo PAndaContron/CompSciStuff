@@ -1,0 +1,18 @@
+package checkers;
+
+import general.Piece;
+
+public class CheckerPiece extends Piece {
+
+	@Override
+	public boolean canMove(Piece[][] board, int[] current, int[] moveTo) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
