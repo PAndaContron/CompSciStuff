@@ -11,6 +11,7 @@ public class Board
 		
 	}
 	
+	
 	public void move(int[] from, int[] to)
 	{
 		
