@@ -1,0 +1,13 @@
+package chess;
+
+import java.io.File;
+
+public class TestChess
+{
+
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		File inputFolder = new File("resources/testInput");
+	}
+
+}

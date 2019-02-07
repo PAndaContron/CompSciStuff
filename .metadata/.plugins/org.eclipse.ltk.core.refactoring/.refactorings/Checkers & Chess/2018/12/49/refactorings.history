@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;requestStr&apos; in &apos;vbInterface.ReflectionManager.main(...)&apos; to &apos;initRequestStr&apos;&#x0D;&#x0A;- Original project: &apos;Checkers &amp; Chess&apos;&#x0D;&#x0A;- Original element: &apos;vbInterface.ReflectionManager.main(String[]).requestStr&apos;&#x0D;&#x0A;- Renamed element: &apos;requestStr&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;requestStr&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;vbInterface{ReflectionManager.java[ReflectionManager~main~\[QString;@requestStr!1116!1177!1123!1132!QString;!0!false" name="initRequestStr" references="true" stamp="1543857409607" version="1.0"/>
+</session>

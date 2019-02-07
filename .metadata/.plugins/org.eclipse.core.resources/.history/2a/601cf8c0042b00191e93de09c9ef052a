@@ -1,0 +1,11 @@
+package chess;
+
+public class TestChess
+{
+
+	public static void main(String[] args)
+	{
+		
+	}
+
+}
