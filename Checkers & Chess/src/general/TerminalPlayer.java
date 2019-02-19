@@ -45,13 +45,21 @@ public class TerminalPlayer extends Player
 				String s = scan.nextLine();
 				
 				//Cheats for debugging
-				if(s.equals("skip"))
-					return;
+//				if(s.equals("skip"))
+//					return;
 //				if(s.equals("hasMoves"))
 //				{
 //					System.out.println(b.hasMoves(getColor()));
 //					continue;
 //				}
+				if(s.startsWith("getMoves"))
+				{
+					System.out.println("Getting moves...");
+					int[] coords = Utils.parseCoord(s.toUpperCase().split("\\s")[1]);
+					Piece p = b.getPiece(coords[0], coords[1]);
+					p.getMoves(b.board, coords).forEach(move -> System.out.println(Arrays.toString(move)));
+					continue;
+				}
 				
 				
 				int[] move = Utils.parseCoords(s);

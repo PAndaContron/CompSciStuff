@@ -1,10 +1,12 @@
 package chess;
 
 import java.awt.Color;
+import java.util.ArrayList;
 import java.util.List;
 
 import general.Piece;
 import general.Side;
+import general.Utils;
 
 public abstract class ChessPiece extends Piece
 {
@@ -22,49 +24,49 @@ public abstract class ChessPiece extends Piece
 
 	public List<int[]> getMoves(Piece[][] board, int[] current)
 	{
-//		List<int[]> moves = new ArrayList<>();
-//		List<int[]> movesNoCheck = getMovesNoCheck(board, current);
-//		
-//		for(int[] move : movesNoCheck)
-//		{
-//			Piece[][] tempBoard = Utils.arrayCopy2D(board);
-//			
-//			tempBoard[move[0]][move[1]] = this;
-//			tempBoard[current[0]][current[1]] = null;
-//			
-//			List<int[]> allNewMoves = new ArrayList<>();
-//			
-//			for(int i=0; i<tempBoard.length; i++)
-//			{
-//				Piece[] row = tempBoard[i];
-//				for(int j=0; j<row.length; j++)
-//				{
-//					Piece p = row[j];
-//					if(p != null && p instanceof ChessPiece && !p.getColor().equals(getColor()))
-//					{
-//						allNewMoves.addAll(((ChessPiece) p).getMovesNoCheck(tempBoard, new int[] {i, j}));
-//					}
-//				}
-//			}
-//			
-//			boolean check = false;
-//			for(int[] newMove : allNewMoves)
-//			{
-//				if(board[newMove[0]][newMove[1]] instanceof King && board[newMove[0]][newMove[1]].getColor().equals(getColor()))
-//				{
-//					check = true;
-//					break;
-//				}
-//			}
-//			if(check)
-//				continue;
-//			
-//			moves.add(move);
-//		}
-//		
-//		return moves;
+		List<int[]> moves = new ArrayList<>();
+		List<int[]> movesNoCheck = getMovesNoCheck(board, current);
 		
-		return getMovesNoCheck(board, current);
+		for(int[] move : movesNoCheck)
+		{
+			Piece[][] tempBoard = Utils.arrayCopy2D(board);
+			
+			tempBoard[move[0]][move[1]] = this;
+			tempBoard[current[0]][current[1]] = null;
+			
+			List<int[]> allNewMoves = new ArrayList<>();
+			
+			for(int i=0; i<tempBoard.length; i++)
+			{
+				Piece[] row = tempBoard[i];
+				for(int j=0; j<row.length; j++)
+				{
+					Piece p = row[j];
+					if(p != null && p instanceof ChessPiece && !p.getColor().equals(getColor()))
+					{
+						allNewMoves.addAll(((ChessPiece) p).getMovesNoCheck(tempBoard, new int[] {i, j}));
+					}
+				}
+			}
+			
+			boolean check = false;
+			for(int[] newMove : allNewMoves)
+			{
+				if(tempBoard[newMove[0]][newMove[1]] instanceof King && tempBoard[newMove[0]][newMove[1]].getColor().equals(getColor()))
+				{
+					check = true;
+					break;
+				}
+			}
+			if(check)
+				continue;
+			
+			moves.add(move);
+		}
+		
+		return moves;
+		
+//		return getMovesNoCheck(board, current);
 	}
 	
 	abstract protected List<int[]> getMovesNoCheck(Piece[][] board, int[] current);

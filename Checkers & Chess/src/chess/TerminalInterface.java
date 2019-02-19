@@ -36,18 +36,23 @@ public class TerminalInterface
 				Player next = turns.next();
 				next.makeMove(b);
 
-				//This is here so the compiler doesn't complain about the unnecessary try/catch which will
-				//become necessary once checkmates and stalemates are actually implemented, and the infinite
-				//while loop which will also be fixed when that is implemented.
-				if(Color.WHITE == Color.BLACK)
+				if(!b.hasMoves(Color.WHITE) || !b.hasMoves(Color.BLACK))
+				{
 					throw new GameOverException(null);
+				}
 			}
 		}
 		catch(GameOverException e)
 		{
-			System.err.println("Advancement made");
-			System.out.println("How did we get here?");
+			System.out.println(b);
+			if(e.getWinner() == null)
+				System.out.println("Stalemate!");
+			else
+				System.out.printf("Checkmate - %s wins!%n",e.getWinner());
 		}
+		
+//		if(args.length > 0)
+//			System.out.println(b);
 		
 		scan.close();
 	}

@@ -1,0 +1,27 @@
+package animals;
+
+import java.awt.Color;
+
+import animal.Mammal;
+
+public class Dog extends Mammal
+{
+	public Dog(String name)
+	{
+		super(name);
+	}
+
+	@Override
+	public Color furColor()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String makeNoise()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

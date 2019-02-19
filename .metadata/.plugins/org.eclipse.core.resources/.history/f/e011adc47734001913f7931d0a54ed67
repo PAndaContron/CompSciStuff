@@ -1,0 +1,11 @@
+package animals;
+
+public abstract class Mammal extends Animal {
+
+	@Override
+	public String makeNoise() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
