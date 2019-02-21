@@ -1,0 +1,11 @@
+package shapes;
+
+public class Square extends Quadrilateral {
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

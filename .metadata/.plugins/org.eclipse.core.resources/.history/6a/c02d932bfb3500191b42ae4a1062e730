@@ -1,0 +1,22 @@
+package animals;
+
+public class Dinosaur extends Reptile {
+
+	public Dinosaur(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int numLegs() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String makeNoise() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
