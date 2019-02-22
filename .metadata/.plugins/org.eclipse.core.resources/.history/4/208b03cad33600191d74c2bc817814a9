@@ -1,0 +1,15 @@
+package shapes;
+
+public class ShapeDriver
+{
+	public static void main(String[] args)
+	{
+		System.out.println("--------------------------------------------------------------------------------");
+		System.out.println("\tTesting Square\t");
+		System.out.println("--------------------------------------------------------------------------------");
+		Shape square = new Square(4);
+		System.out.printf("Perimeter: %d%n", square.getPerimeter());
+		System.out.printf("Area:      %d%n", square.getArea());
+		System.out.println();
+	}
+}

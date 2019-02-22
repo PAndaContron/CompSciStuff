@@ -23,8 +23,6 @@ public class Triangle extends Shape
 
 	public double getArea()
 	{
-		double s = getPerimeter()/2;
-		
 		return 0;
 	}
 

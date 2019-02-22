@@ -9,11 +9,6 @@ public abstract class Quadrilateral extends Shape
 	public Quadrilateral(double a, double b, double c, double d)
 	{
 		sides = new double[] {a, b, c, d};
-		for(double i : sides)
-		{
-			if(i <= 0)
-				throw new IllegalArgumentException("Side lengths must be positive");
-		}
 	}
 	
 	public double getPerimeter()

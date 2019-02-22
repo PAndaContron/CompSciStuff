@@ -23,8 +23,6 @@ public class Triangle extends Shape
 
 	public double getArea()
 	{
-		double s = getPerimeter()/2;
-		
 		return 0;
 	}
 
@@ -40,9 +38,5 @@ public class Triangle extends Shape
 	{
 		double left = sides[0]*sides[0] + sides[1]*sides[1];
 		double right = sides[2]*sides[2];
-		
-		if(Math.abs(left-right) < 0.00001)
-			return 0;
-		return left>right ? -1 : 1;
 	}
 }
