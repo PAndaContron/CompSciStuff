@@ -1,0 +1,25 @@
+package animals;
+
+public class AnimalDriver
+{
+
+	public static void main(String[] args)
+	{
+		Animal bear = new Bear("Yogi");
+		Animal dog = new Dog("Spot");
+		Animal snake = new Snake("Jim");
+		Animal dino = new Dinosaur("Steg");
+		
+		System.out.println("makeNoise method:");
+		System.out.printf("Bear:  %s%n", bear.makeNoise());
+		System.out.printf("Dog:   %s%n", dog.makeNoise());
+		System.out.printf("Snake: %s%n", snake.makeNoise());
+		System.out.printf("Dino:  %s%n", dino.makeNoise());
+		System.out.println();
+		
+		System.out.println("furColor method (Mammals):");
+		System.out.printf("Bear: %s%n", ((Mammal) bear).furColor());
+		System.out.printf("Dog:  %s%n", ((Mammal) dog).furColor());
+	}
+
+}

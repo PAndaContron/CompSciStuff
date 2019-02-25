@@ -1,0 +1,14 @@
+package animals;
+
+public class AnimalDriver
+{
+
+	public static void main(String[] args)
+	{
+		Animal bear = new Bear("Yogi");
+		Animal dog = new Dog("Spot");
+		Animal snake = new Snake("Jim");
+		Animal dino = new Dinosaur("Steg");
+	}
+
+}

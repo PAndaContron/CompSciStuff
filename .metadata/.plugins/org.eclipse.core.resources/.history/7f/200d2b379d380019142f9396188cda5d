@@ -1,0 +1,88 @@
+package shapes;
+
+public class ShapeDriver
+{
+	public static void main(String[] args)
+	{
+		System.out.println("--------------------------------------------------------------------------------");
+		System.out.println("\tTesting Square");
+		System.out.println("--------------------------------------------------------------------------------");
+		Shape square = new Square(4);
+		System.out.printf("Perimeter: %f%n", square.getPerimeter());
+		System.out.printf("Area:      %f%n", square.getArea());
+		System.out.println();
+		System.out.println("Creating square with side length 0:");
+		System.out.println(tryCode(() -> new Square(0)));
+		System.out.println("Creating square with side length -2:");
+		System.out.println(tryCode(() -> new Square(-2)));
+		System.out.println();
+		System.out.println();
+
+		System.out.println("--------------------------------------------------------------------------------");
+		System.out.println("\tTesting Triangle");
+		System.out.println("--------------------------------------------------------------------------------");
+		Shape tri1 = new Triangle(3, 4, 5);
+		System.out.println("3-4-5 Triangle:");
+		System.out.printf("\tPerimeter: %f%n", tri1.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri1.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri1).getType());
+		System.out.println("Different orders of parameters (should be the same output):");
+		Shape tri1a1 = new Triangle(4, 3, 5);
+		System.out.printf("\tPerimeter: %f%n", tri1a1.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri1a1.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri1a1).getType());
+		Shape tri1a2 = new Triangle(5, 4, 3);
+		System.out.printf("\tPerimeter: %f%n", tri1a2.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri1a2.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri1a2).getType());
+		Shape tri1a3 = new Triangle(3, 5, 4);
+		System.out.printf("\tPerimeter: %f%n", tri1a3.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri1a3.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri1a3).getType());
+		System.out.println();
+		Shape tri2 = new Triangle(1, 1, 1);
+		System.out.println("Equilateral Triangle:");
+		System.out.printf("\tPerimeter: %f%n", tri2.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri2.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri2).getType());
+		System.out.println();
+		Shape tri3 = new Triangle(2, 2, 3);
+		System.out.println("2-2-3 Triangle:");
+		System.out.printf("\tPerimeter: %f%n", tri3.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri3.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri3).getType());
+		System.out.println("Different orders of parameters (should be the same output):");
+		Shape tri3a1 = new Triangle(2, 2, 3);
+		System.out.printf("\tPerimeter: %f%n", tri3a1.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri3a1.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri3a1).getType());
+		Shape tri3a2 = new Triangle(2, 3, 2);
+		System.out.printf("\tPerimeter: %f%n", tri3a2.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri3a2.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri3a2).getType());
+		Shape tri3a3 = new Triangle(3, 2, 2);
+		System.out.printf("\tPerimeter: %f%n", tri3a3.getPerimeter());
+		System.out.printf("\tArea:      %f%n", tri3a3.getArea());
+		System.out.printf("\tType:      %d%n", ((Triangle) tri3a3).getType());
+		System.out.println();
+		System.out.println("Creating triangles with side length 0:");
+		System.out.println(tryCode(() -> new Triangle(0, 1, 1)));
+		System.out.println(tryCode(() -> new Triangle(1, 0, 1)));
+		System.out.println(tryCode(() -> new Triangle(1, 1, 0)));
+		System.out.println("Creating square with side length -2:");
+		System.out.println(tryCode(() -> new Triangle(-2, 1, 1)));
+	}
+	
+	private static String tryCode(Runnable code)
+	{
+		try
+		{
+			code.run();
+		}
+		catch(Exception e)
+		{
+			return e.toString();
+		}
+		return "Ran without error!";
+	}
+}

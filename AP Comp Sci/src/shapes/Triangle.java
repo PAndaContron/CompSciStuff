@@ -24,8 +24,12 @@ public class Triangle extends Shape
 	public double getArea()
 	{
 		double s = getPerimeter()/2;
+		double prod = s;
 		
-		return 0;
+		for(double i : sides)
+			prod *= s-i;
+		
+		return Math.sqrt(prod);
 	}
 
 	public double getPerimeter()
