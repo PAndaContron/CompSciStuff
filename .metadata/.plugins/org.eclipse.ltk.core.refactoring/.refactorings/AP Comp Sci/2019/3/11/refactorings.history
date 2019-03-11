@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;dataStructures.TreeNode.getLevelDown(...)&apos; to &apos;visitLevelDown&apos;&#x0D;&#x0A;- Original project: &apos;AP Comp Sci&apos;&#x0D;&#x0A;- Original element: &apos;dataStructures.TreeNode.getLevelDown(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;dataStructures.TreeNode.visitLevelDown(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;getLevelDown&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;dataStructures{TreeNode.java[TreeNode~getLevelDown~I~QConsumer\&lt;QTreeNode\&lt;QT;&gt;;&gt;;" name="visitLevelDown" references="true" stamp="1552326507595" version="1.0"/>
+</session>

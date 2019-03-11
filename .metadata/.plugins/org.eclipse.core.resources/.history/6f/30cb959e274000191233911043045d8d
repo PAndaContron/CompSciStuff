@@ -1,0 +1,18 @@
+package dataStructures;
+
+public class BinaryTree<T>
+{
+	private TreeNode<T> root;
+	
+	public int height()
+	{
+		if(root == null)
+			return 0;
+		return root.depth();
+	}
+	
+	public void printInorder()
+	{
+		
+	}
+}

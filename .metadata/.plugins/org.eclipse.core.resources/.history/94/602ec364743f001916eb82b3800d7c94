@@ -1,0 +1,18 @@
+package dataStructures;
+
+import java.util.NoSuchElementException;
+
+public class LinkedListStack<T>
+{
+	private Node<T> first;
+	
+	public T pop()
+	{
+		if(first == null)
+		{
+			throw new NoSuchElementException();
+		}
+		
+		
+	}
+}

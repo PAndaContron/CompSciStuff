@@ -1,8 +1,0 @@
-package testClasses;
-
-public class GradStudent extends Student {
-	@Override
-	public String getFood() {
-		return "Taco";
-	}
-}

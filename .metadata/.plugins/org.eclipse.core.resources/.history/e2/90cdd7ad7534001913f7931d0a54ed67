@@ -1,5 +1,0 @@
-package testClasses;
-
-public class GradStudent extends Student {
-
-}
