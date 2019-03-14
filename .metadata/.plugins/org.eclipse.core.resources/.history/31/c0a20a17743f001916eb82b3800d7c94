@@ -1,8 +1,0 @@
-package dataStructures;
-
-public class LinkedListStack<T>
-{
-	private Node<T> first;
-	
-	
-}
