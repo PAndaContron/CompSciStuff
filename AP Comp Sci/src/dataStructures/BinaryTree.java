@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 
 public class BinaryTree<T>
 {
-	private TreeNode<T> root;
+	protected TreeNode<T> root;
 	
 	public BinaryTree()
 	{

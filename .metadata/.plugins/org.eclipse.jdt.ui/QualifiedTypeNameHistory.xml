@@ -33,6 +33,7 @@
 <fullyQualifiedTypeName name="general.Utils"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.awt.datatransfer.SystemFlavorMap"/>
+<fullyQualifiedTypeName name="dataStructures.SearchTreeNode"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -1,5 +1,8 @@
 package dataStructures;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+
 public class DataStructuresDriver
 {
 	public static void main(String[] args)
@@ -36,7 +39,7 @@ public class DataStructuresDriver
 			System.out.println(queue.dequeue());
 		System.out.println();
 
-		System.out.println("*********************TESTING TREE**********************");
+		System.out.println("*****************TESTING BINARY TREE*******************");
 		BinaryTree<Integer> tree = new BinaryTree<>();
 		System.out.println("Inserting values: 123456789");
 		for(int i=1; i<10; i++)
@@ -51,5 +54,56 @@ public class DataStructuresDriver
 		tree.printBreadthFirst();
 		System.out.println("Breadth First Queue: ");
 		tree.printBreadthFirstQ();
+		System.out.println();
+
+		System.out.println("***************TESTING BINARY SEARCH TREE**************");
+		BinarySearchTree<Integer> searchTree = new BinarySearchTree<>();
+		System.out.println("Inserting values: 56387214");
+		searchTree.insert(5);
+		searchTree.insert(6);
+		searchTree.insert(3);
+		searchTree.insert(8);
+		searchTree.insert(7);
+		searchTree.insert(2);
+		searchTree.insert(1);
+		searchTree.insert(4);
+		System.out.println("Breadth First:");
+		searchTree.printBreadthFirstQ();
+		System.out.println("Is valid: "+searchTree.isValid());
+		System.out.println("Does it contain 0?\t"+searchTree.search(0));
+		System.out.println("Does it contain -1?\t"+searchTree.search(-1));
+		System.out.println("Does it contain 9?\t"+searchTree.search(9));
+		System.out.println("Does it contain 5?\t"+searchTree.search(5));
+		System.out.println("Does it contain 1?\t"+searchTree.search(1));
+		System.out.println("Does it contain 7?\t"+searchTree.search(7));
+		System.out.println("Deleting 1...");
+		searchTree.remove(1);
+		System.out.println("Breadth First:");
+		searchTree.printBreadthFirstQ();
+		System.out.println("Is valid: "+searchTree.isValid());
+		System.out.println("Deleting 8...");
+		searchTree.remove(8);
+		System.out.println("Breadth First:");
+		searchTree.printBreadthFirstQ();
+		System.out.println("Is valid: "+searchTree.isValid());
+		System.out.println("Deleting 3...");
+		searchTree.remove(3);
+		System.out.println("Breadth First:");
+		searchTree.printBreadthFirstQ();
+		System.out.println("Is valid: "+searchTree.isValid());
+		System.out.println("Conversions:");
+		Integer[] array = {6, 7, 2, 9, 1, 0, 12, 4};
+		BinarySearchTree.sort(array);
+		LinkedList<Integer> list = new LinkedList<>();
+		list.addAll(Arrays.asList(array));
+		System.out.println(Arrays.toString(array));
+		Arrays.sort(array);
+		System.out.println(Arrays.toString(array));
+		System.out.print("Converting array: ");
+		BinarySearchTree.convert(array).printBreadthFirstQ();
+		System.out.print("Converting list: ");
+		BinarySearchTree.convert(list).printBreadthFirstQ();
+		System.out.print("Converting tree: ");
+		BinarySearchTree.convert(tree).printBreadthFirstQ();
 	}
 }

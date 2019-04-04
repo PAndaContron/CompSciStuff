@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;dataStructures.BinarySearchTree.contains(...)&apos; to &apos;search&apos;&#x0D;&#x0A;- Original project: &apos;AP Comp Sci&apos;&#x0D;&#x0A;- Original element: &apos;dataStructures.BinarySearchTree.contains(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;dataStructures.BinarySearchTree.search(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="true" description="Rename method &apos;contains&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;dataStructures{BinarySearchTree.java[BinarySearchTree~contains~QT;" name="search" references="true" stamp="1553881165094" version="1.0"/>
+</session>
