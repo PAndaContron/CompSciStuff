@@ -96,14 +96,12 @@ public class DataStructuresDriver
 		BinarySearchTree.sort(array);
 		LinkedList<Integer> list = new LinkedList<>();
 		list.addAll(Arrays.asList(array));
-		System.out.println(Arrays.toString(array));
-		Arrays.sort(array);
-		System.out.println(Arrays.toString(array));
-		System.out.print("Converting array: ");
-		BinarySearchTree.convert(array).printBreadthFirstQ();
-		System.out.print("Converting list: ");
-		BinarySearchTree.convert(list).printBreadthFirstQ();
-		System.out.print("Converting tree: ");
-		BinarySearchTree.convert(tree).printBreadthFirstQ();
+		System.out.printf("Original Array/LinkedList: %s%n", Arrays.toString(array));
+		System.out.print("Converting array: (Printed Inorder)");
+		BinarySearchTree.convert(array).printInorder();
+		System.out.print("Converting list: (Printed Inorder)");
+		BinarySearchTree.convert(list).printInorder();
+		System.out.print("Converting tree: (Printed Inorder)");
+		BinarySearchTree.convert(tree).printInorder();
 	}
 }

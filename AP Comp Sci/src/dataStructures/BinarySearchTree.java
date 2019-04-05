@@ -156,7 +156,8 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 	@SuppressWarnings("unchecked")
 	public static <T extends Comparable<T>> BinarySearchTree<T> convert(LinkedList<T> list)
 	{
-		return convert((T[]) list.toArray());
+		T[] temp = (T[]) new Comparable[0];
+		return convert(list.toArray(temp));
 	}
 	
 	public static <T extends Comparable<T>> BinarySearchTree<T> convert(BinaryTree<T> tree)
@@ -177,7 +178,8 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 		}
 		
 		@SuppressWarnings("unchecked")
-		T[] arr = (T[]) list.toArray();
+		T[] temp = (T[]) new Comparable[0];
+		T[] arr = list.toArray(temp);
 		sort(arr);
 		return convert(arr);
 	}
@@ -186,7 +188,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 	{
 		sort(arr, 0, arr.length);
 	}
-	
+	static int test = 0;
 	private static <T extends Comparable<T>> void sort(T[] arr, int start, int end)
 	{
 		if(end-start < 2)
@@ -197,19 +199,24 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 		int i = 0, j = end-start;
 		for(int index = start; index < end; index++)
 		{
+			if(index == mid)
+				continue;
 			if(arr[index].compareTo(arr[mid]) < 0)
 				temp[i++] = arr[index];
 			else
 				temp[--j] = arr[index];
 		}
 		
+		temp[i] = arr[mid];
+		i += start;
+		
 		for(int index=0; index<temp.length; index++)
 		{
 			arr[start + index] = temp[index];
 		}
 		
-		sort(arr, start, mid);
-		sort(arr, mid, end);
+		sort(arr, start, i);
+		sort(arr, i, end);
 	}
 	
 	private static <T extends Comparable<T>> boolean isSorted(T[] arr)
