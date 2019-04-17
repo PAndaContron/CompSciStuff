@@ -149,6 +149,8 @@ public abstract class Board implements Serializable
 	 */
 	public void move(int[] from, int[] to)
 	{
+		if(board[from[0]][from[1]] != null)
+			board[from[0]][from[1]].setMoved(true);
 		board[to[to.length-2]][to[to.length-1]] = board[from[0]][from[1]];
 		board[from[0]][from[1]] = null;
 		updatePanels();

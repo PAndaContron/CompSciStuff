@@ -24,6 +24,8 @@ public abstract class Piece implements Serializable
 	/** The side of the board this piece starts on. */
 	private Side side;
 	
+	private boolean hasMoved = false;
+	
 	/**
 	 * Creates a new Piece with a blank icon.
 	 * 
@@ -67,6 +69,16 @@ public abstract class Piece implements Serializable
 	protected void setImageIcon(String s)
 	{
 		imageIconPath = s;
+	}
+	
+	public void setMoved(boolean moved)
+	{
+		hasMoved = moved;
+	}
+	
+	public boolean hasMoved()
+	{
+		return hasMoved;
 	}
 	
 	/**

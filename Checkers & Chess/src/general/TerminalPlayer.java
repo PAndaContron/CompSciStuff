@@ -52,14 +52,14 @@ public class TerminalPlayer extends Player
 //					System.out.println(b.hasMoves(getColor()));
 //					continue;
 //				}
-				if(s.startsWith("getMoves"))
-				{
-					System.out.println("Getting moves...");
-					int[] coords = Utils.parseCoord(s.toUpperCase().split("\\s")[1]);
-					Piece p = b.getPiece(coords[0], coords[1]);
-					p.getMoves(b.board, coords).forEach(move -> System.out.println(Arrays.toString(move)));
-					continue;
-				}
+//				if(s.startsWith("getMoves"))
+//				{
+//					System.out.println("Getting moves...");
+//					int[] coords = Utils.parseCoord(s.toUpperCase().split("\\s")[1]);
+//					Piece p = b.getPiece(coords[0], coords[1]);
+//					p.getMoves(b.board, coords).forEach(move -> System.out.println(Arrays.toString(move)));
+//					continue;
+//				}
 				
 				
 				int[] move = Utils.parseCoords(s);
@@ -73,7 +73,7 @@ public class TerminalPlayer extends Player
 			//actual bugs, so if there is any kind of Exception thrown, it must be the user's input.
 			catch(Exception e)
 			{
-				e.printStackTrace();
+//				e.printStackTrace();
 				System.out.println("That's not a valid move!");
 			}
 		}
