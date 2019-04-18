@@ -105,4 +105,24 @@ public class SearchTreeNode<T extends Comparable<T>> extends TreeNode<T>
 		
 		return valid;
 	}
+	
+	public static <T extends Comparable<T>> SearchTreeNode<T> convert(TreeNode<T> original, LinkedListQueue<T> sorted)
+	{
+		SearchTreeNode<T> left = null;
+		
+		if(original.getLeft() != null)
+		{
+			left = convert(original.getLeft(), sorted);
+		}
+		
+		SearchTreeNode<T> search = new SearchTreeNode<>(sorted.dequeue());
+		search.setLeft(left);
+		
+		if(original.getRight() != null)
+		{
+			search.setRight(convert(original.getRight(), sorted));
+		}
+		
+		return search;
+	}
 }

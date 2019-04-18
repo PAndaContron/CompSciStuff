@@ -176,19 +176,20 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 				break;
 			}
 		}
+		sort(list);
+		for(T t : list)
+			q.enqueue(t);
 		
-		@SuppressWarnings("unchecked")
-		T[] temp = (T[]) new Comparable[0];
-		T[] arr = list.toArray(temp);
-		sort(arr);
-		return convert(arr);
+		BinarySearchTree<T> searchTree = new BinarySearchTree<>();
+		searchTree.root = SearchTreeNode.convert(tree.root, q);
+		return searchTree;
 	}
 	
 	public static <T extends Comparable<T>> void sort(T[] arr)
 	{
 		sort(arr, 0, arr.length);
 	}
-	static int test = 0;
+
 	private static <T extends Comparable<T>> void sort(T[] arr, int start, int end)
 	{
 		if(end-start < 2)
@@ -217,6 +218,45 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 		
 		sort(arr, start, i);
 		sort(arr, i, end);
+	}
+	
+	public static <T extends Comparable<T>> void sort(LinkedList<T> list)
+	{
+		sort(list, 0, list.size());
+	}
+
+	private static <T extends Comparable<T>> void sort(LinkedList<T> list, int start, int end)
+	{
+		if(end-start < 2)
+			return;
+		
+		int mid = (start+end)/2;
+		LinkedList<T> temp = new LinkedList<>();
+		for(int index = start; index < end; index++)
+		{
+			temp.add(null);
+		}
+		int i = 0, j = end-start;
+		for(int index = start; index < end; index++)
+		{
+			if(index == mid)
+				continue;
+			if(list.get(index).compareTo(list.get(mid)) < 0)
+				temp.set(i++, list.get(index));
+			else
+				temp.set(--j, list.get(index));
+		}
+		
+		temp.set(i, list.get(mid));
+		i += start;
+		
+		for(int index=0; index<temp.size(); index++)
+		{
+			list.set(start + index, temp.get(index));
+		}
+		
+		sort(list, start, i);
+		sort(list, i, end);
 	}
 	
 	private static <T extends Comparable<T>> boolean isSorted(T[] arr)

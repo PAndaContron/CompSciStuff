@@ -1,6 +1,6 @@
 package dataStructures;
 
-import java.util.NoSuchElementException;
+import java.util.EmptyStackException;
 
 public class LinkedListStack<T>
 {
@@ -14,7 +14,7 @@ public class LinkedListStack<T>
 	public T pop()
 	{
 		if(first == null)
-			throw new NoSuchElementException();
+			throw new EmptyStackException();
 		
 		T value = first.getData();
 		first = first.getNext();
