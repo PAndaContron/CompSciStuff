@@ -15,6 +15,12 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 			root.add(newNode);
 	}
 	
+	/**
+	 * Checks if a value is inside this tree.
+	 * 
+	 * @param data The data to look for.
+	 * @return true if the data is in here, false if it is not
+	 */
 	public boolean search(T data)
 	{
 		if(root == null)
@@ -22,6 +28,16 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 		return ((SearchTreeNode<T>) root).contains(data);
 	}
 	
+	/**
+	 * Removes a {@link SearchTreeNode} from this tree. If it has one child, the child replaces it. If it has two children, it is
+	 * replaced by its inorder successor.
+	 * 
+	 * @param data The data to be removed from the Tree. If it is not found, nothing happens.
+	 * 
+	 * @see #getInorderSuccessor(SearchTreeNode)
+	 * @see SearchTreeNode#getInorderSuccessor(SearchTreeNode)
+	 * @see SearchTreeNode#getMinimumNode()
+	 */
 	public void remove(T data)
 	{
 		if(!search(data))
@@ -77,11 +93,23 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T>
 		}
 	}
 	
+	/**
+	 * Checks the validity of this BinarySearchTree. The tree is valid if every left node is less than or equal to its parent, and
+	 * every right node is greater than its parent.
+	 * 
+	 * @return Whether or not the tree is valid
+	 */
 	public boolean isValid()
 	{
 		return root == null || ((SearchTreeNode<T>) root).isValid();
 	}
 	
+	/**
+	 * Finds the inorder successor of a {@link SearchTreeNode} in this tree by doing an inorder traversal.
+	 * 
+	 * @param node The node to find the successor of, cannot be null
+	 * @return The inorder successor of the node
+	 */
 	public SearchTreeNode<T> getInorderSuccessor(SearchTreeNode<T> node)
 	{
 		LinkedListQueue<SearchTreeNode<T>> q = new LinkedListQueue<>();

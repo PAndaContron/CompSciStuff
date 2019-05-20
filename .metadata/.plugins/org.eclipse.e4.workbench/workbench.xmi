@@ -256,7 +256,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_li-k4-bfEeixHqsb49ptZw" elementId="org.eclipse.ui.editorss" selectedElement="_li-k5ObfEeixHqsb49ptZw">
-      <children xsi:type="basic:PartStack" xmi:id="_li-k5ObfEeixHqsb49ptZw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_5kS6gFdDEem2aJxk_2S6jQ">
+      <children xsi:type="basic:PartStack" xmi:id="_li-k5ObfEeixHqsb49ptZw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_WYZfcHscEemgP6nzy5kMTg">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
@@ -268,7 +268,13 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_5kS6gFdDEem2aJxk_2S6jQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BinarySearchTree.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BinarySearchTree.java&quot; partName=&quot;BinarySearchTree.java&quot; title=&quot;BinarySearchTree.java&quot; tooltip=&quot;AP Comp Sci/src/dataStructures/BinarySearchTree.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AP Comp Sci/src/dataStructures/BinarySearchTree.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5176&quot; selectionTopPixel=&quot;2983&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BinarySearchTree.java&quot; partName=&quot;BinarySearchTree.java&quot; title=&quot;BinarySearchTree.java&quot; tooltip=&quot;AP Comp Sci/src/dataStructures/BinarySearchTree.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AP Comp Sci/src/dataStructures/BinarySearchTree.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;376&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_WYZfcHscEemgP6nzy5kMTg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SearchTreeNode.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SearchTreeNode.java&quot; partName=&quot;SearchTreeNode.java&quot; title=&quot;SearchTreeNode.java&quot; tooltip=&quot;AP Comp Sci/src/dataStructures/SearchTreeNode.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AP Comp Sci/src/dataStructures/SearchTreeNode.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2694&quot; selectionTopPixel=&quot;1273&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -571,7 +577,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_li-lTebfEeixHqsb49ptZw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_RYgq12H-EemtpP-MaijPdw" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_li-zXebfEeixHqsb49ptZw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5r57RnsaEemgP6nzy5kMTg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_li-zXebfEeixHqsb49ptZw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_li-lWubfEeixHqsb49ptZw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -607,7 +613,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_li-mEubfEeixHqsb49ptZw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_RYgq4WH-EemtpP-MaijPdw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_li-zAObfEeixHqsb49ptZw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5r57UHsaEemgP6nzy5kMTg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_li-zAObfEeixHqsb49ptZw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_li-mHObfEeixHqsb49ptZw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -4271,7 +4277,7 @@
   <addons xmi:id="_li-4hebfEeixHqsb49ptZw" elementId="DnD Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
   <addons xmi:id="_li-4hubfEeixHqsb49ptZw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_li-4h-bfEeixHqsb49ptZw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_Ng_msGH-EemtpP-MaijPdw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_li-4iebfEeixHqsb49ptZw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_li-4iubfEeixHqsb49ptZw" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_li-4i-bfEeixHqsb49ptZw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
